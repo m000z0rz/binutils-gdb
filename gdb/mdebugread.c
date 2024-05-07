@@ -3293,7 +3293,7 @@ parse_partial_symbols (minimal_symbol_reader &reader,
 			    function_outside_compilation_unit_complaint
 			      (copy.c_str ());
 			  }
-			pst->add_psymbol (gdb::string_view (namestring,
+			pst->add_psymbol (std::string_view (namestring,
 							    p - namestring),
 					  true, VAR_DOMAIN, LOC_BLOCK,
 					  section,

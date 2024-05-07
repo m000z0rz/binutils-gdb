@@ -62,6 +62,5 @@ for arg do
   set -- "$@" "$arg"
 done
 
-/home/someuser/qemu-irix/build/irix-linux-user/qemu-irix -L /home/someuser/ido/ido7.1_compiler /home/someuser/ido/ido7.1_compiler/usr/bin/cc -Xcpluscomm -nostdlib -nostdinc -mips2
--g2 "$@" 2>/dev/null
+/home/someuser/qemu-irix/build/irix-linux-user/qemu-irix -L /home/someuser/ido/ido7.1_compiler /home/someuser/ido/ido7.1_compiler/usr/bin/cc -Xcpluscomm -nostdlib -nostdinc -mips2 -g2 "$@" 2>/dev/null
 fi
